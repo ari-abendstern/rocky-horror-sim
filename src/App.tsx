@@ -2,7 +2,7 @@ import Simulator from "./components/simulator";
 
 function App() {
 
-  return <Simulator isPlaying={isPlaying} setIsPlaying={setisPlaying} />;
+  return <Simulator/>;
 }
 
 export default App;
