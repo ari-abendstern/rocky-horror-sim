@@ -1,12 +1,18 @@
+import { useState } from "react";
+import Simulator from "./components/simulator";
+import BeginButton from "./components/BeginButton";
+
+
 function App() {
+
+  const [isPlaying, setisPlaying] = useState(false)
+
+
   return (
-  <>
-  <video width="100%" height="100%" controls>
-    <source src="../assets/video.mp4" />
-    Susan Sontag just called. Your browser has terrible taste in camp. Or it doesn't support the video tag. One of the two.
-  </video>
-  </>
-  )
+    <>
+      { isPlaying ? <Simulator /> : <BeginButton/> }
+    </>
+  );
 }
 
 export default App;
